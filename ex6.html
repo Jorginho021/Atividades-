@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Constante</title>
+  <style>
+    .aviso {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p class="aviso">Veja o console para o erro da constante!</p>
+  <script>
+    const PI = 3.14;
+    try {
+      PI = 3.14159;
+    } catch (error) {
+      console.error("Erro ao tentar alterar uma constante:", error);
+    }
+  </script>
+</body>
+</html>

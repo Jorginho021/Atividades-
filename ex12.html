@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Saudação</title>
+  <style>
+    button {
+      padding: 10px;
+      background: #2980b9;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="saudar()">Saudar</button>
+  <script>
+    function saudar() {
+      const nome = prompt("Qual seu nome?");
+      const turno = prompt("Bom dia, boa tarde ou boa noite?");
+      console.log(`Olá, ${nome}! Tenha um(a) ${turno}.`);
+    }
+  </script>
+</body>
+</html>

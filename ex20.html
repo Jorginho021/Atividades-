@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela de Variáveis</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <table id="tabela">
+    <tr>
+      <th>Tipo</th>
+      <th>Valor</th>
+    </tr>
+  </table>
+
+  <script>
+    var nome = "João";
+    let idade = 25;
+    const cidade = "São Paulo";
+
+    const tabela = document.getElementById("tabela");
+
+    function adicionarLinha(tipo, valor) {
+      const linha = tabela.insertRow();
+      const celula1 = linha.insertCell(0);
+      const celula2 = linha.insertCell(1);
+      celula1.innerText = tipo;
+      celula2.innerText = valor;
+    }
+
+    adicionarLinha("var", nome);
+    adicionarLinha("let", idade);
+    adicionarLinha("const", cidade);
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Soma</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="somarNumeros()">Somar Números</button>
+  <script>
+    function somarNumeros() {
+      const n1 = Number(prompt("Digite o primeiro número:"));
+      const n2 = Number(prompt("Digite o segundo número:"));
+      alert(`A soma é: ${n1 + n2}`);
+    }
+  </script>
+</body>
+</html>

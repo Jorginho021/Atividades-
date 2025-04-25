@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Console</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      background: #2ecc71;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="mostrarDados()">Mostrar Dados</button>
+  <script>
+    function mostrarDados() {
+      const nome = prompt("Qual seu nome?");
+      const idade = prompt("Qual sua idade?");
+      console.log(`Nome: ${nome}, Idade: ${idade}`);
+    }
+  </script>
+</body>
+</html>
